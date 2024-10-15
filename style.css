@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./assets/img/Josy Carrilho - PATTERN NUDE.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+header{
+    background-color: rgba( 0,0,0,0.5);
+    width: 100%;
+    height: 10vh;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+header ul{
+    display: flex;
+    font-family: "Berlin Sans FB Demi", sans-serif;
+    list-style: none;
+    align-items: center;
+    gap: 50px;
+    font-size: x-large ;
+
+}
+
+
+header ul li {
+    position: relative;
+
+}
+
+header ul li a{
+    color: #F1D9CA;
+    text-decoration: none;
+
+}
+
+header li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #dd6612;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+header li:hover::after{
+    transform: scale(1);
+}
+
+.section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+section {
+    margin-left:15px;
+    width: 70%;
+    background-color: #F1D9CA;
+    border: 1px solid #F1D9CA;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden;
+
+
+}
+section p {
+    margin-left: 20px;
+    padding: 10px;
+    max-width: 1300px;
+    font-size: 35px;
+    position: relative;
+    font-family: "Century Gothic", sans-serif;
+
+}
+
+#profissional {
+    margin-top: -530px;
+    margin-left:52%;
+    position: absolute;
+    width: 550px;
+    height: 550px;
+}
+
+aside{
+    background-color: #F1D9CA;
+    border: 1px solid #F1D9CA;
+    margin-top: 50px;
+    border-radius: 0 10px 10px 0 ;
+    margin-right: 15px;
+
+    width: 30%;
+    padding: 20px;
+}
+
+aside h2 {
+
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 35px;
+
+}
+
+aside ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+aside ul li a {
+    font-size: xx-large;
+    color: #ba5c22;
+    text-decoration: none;
+
+}
+
+aside li:hover a{
+    color: #190901;
+}
+ footer{
+     margin-top: 282px;
+     height: 13vh;
+     align-items: center;
+     background-color: rgba( 0,0,0,0.5);
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+
+ }
+footer img{
+    margin-top: 10px;
+}
+ footer h4{
+     margin-top: 10px;
+     color: white;
+ }
