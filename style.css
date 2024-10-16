@@ -1,196 +1,194 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-image: url("./assets/img/Josy Carrilho - PATTERN NUDE.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-
+html,
+body {
+  height: 100%;
 }
 
-
-header{
-    background-color: rgba( 0,0,0,0.5);
-    width: 100%;
-    height: 10vh;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/img/Josy Carrilho - PATTERN NUDE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-
-header ul{
-    display: flex;
-    font-family: "Berlin Sans FB Demi", sans-serif;
-    list-style: none;
-    align-items: center;
-    gap: 50px;
-    font-size: x-large ;
-
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 5vw;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+header img {
+  width: 60px;
+  height: 60px;
 }
 
+header ul {
+  display: flex;
+  font-family: "Berlin Sans FB Demi", sans-serif;
+  list-style: none;
+  align-items: center;
+  gap: 50px;
+  font-size: x-large;
+}
 
 header ul li {
-    position: relative;
-
+  position: relative;
 }
 
-header ul li a{
-    color: #F1D9CA;
-    text-decoration: none;
-
+header ul li a {
+  color: #f1d9ca;
+  text-decoration: none;
 }
 
-header li::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #dd6612;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transform: scale(0);
-    transition: transform 0.3s;
+header li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #dd6612;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scale(0);
+  transition: transform 0.3s;
 }
-header li:hover::after{
-    transform: scale(1);
+header li:hover::after {
+  transform: scale(1);
 }
 
 .section {
-
-    display: flex;
-    margin-top: 100px;
+  display: flex;
+  margin-top: 100px;
 }
 
 section {
-    margin-left:15px;
-    width: 70%;
-    background-color: #F1D9CA;
-    border: 1px solid #F1D9CA;
-    border-radius: 10px 0 0 10px;
-    padding: 20px;
-    align-items: center;
-    margin-top: 50px;
+  margin-left: 15px;
+  width: 70%;
+  background-color: #f1d9ca;
+  border: 1px solid #f1d9ca;
+  border-radius: 10px 0 0 10px;
+  padding: 20px;
+  align-items: center;
+  margin-top: 50px;
 
-    position: relative;
-
+  position: relative;
 }
 section p {
+  margin-left: 20px;
+  padding: 20px;
+  width: 60%;
+  font-size: 25px;
 
-    margin-left: 20px;
-    padding:20px;
-    width: 60%;
-    font-size: 25px;
-
-    font-family: "Century Gothic", sans-serif;
-
+  font-family: "Century Gothic", sans-serif;
 }
 
 #profissional {
-    margin-top:-3%;
-    margin-left:40%;
-    position: absolute;
-    width: 580px;
-    height: 580px;
-
+  margin-top: -3%;
+  margin-left: 40%;
+  position: absolute;
+  width: 580px;
+  height: 580px;
 }
 
-aside{
-    background-color: #F1D9CA;
-    border: 1px solid #F1D9CA;
-    margin-top: 50px;
-    border-radius: 0 10px 10px 0 ;
-    margin-right: 15px;
+aside {
+  background-color: #f1d9ca;
+  border: 1px solid #f1d9ca;
+  margin-top: 50px;
+  border-radius: 0 10px 10px 0;
+  margin-right: 15px;
 
-    width: 30%;
-    padding: 20px;
+  width: 30%;
+  padding: 20px;
 }
 
 aside h2 {
-
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    font-size: 35px;
-
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 35px;
 }
 
 aside ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
 }
 
 aside ul li a {
-    font-size: xx-large;
-    color: #ba5c22;
-    text-decoration: none;
-
+  font-size: xx-large;
+  color: #ba5c22;
+  text-decoration: none;
 }
 
-aside li:hover a{
-    color: #190901;
+aside li:hover a {
+  color: #190901;
 }
- footer{
-     padding: 10px;
-     margin-top: 282px;
-     height: 13vh;
-     align-items: center;
-     background-color: rgba( 0,0,0,0.5);
-     display: flex;
-     flex-direction: column;
-     gap: 5px;
+.footer {
+  padding: 10px;
+  margin-top: auto;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
 
- }
-footer img{
-    margin-top: 10px;
+  gap: 5px;
 }
- footer h4{
-     margin-top: 10px;
-     color: white;
- }
+footer img {
+  margin-top: 5px;
+}
+footer h4 {
+  
+  margin-top: 5px;
+  color: white;
+}
 
+@media (max-width: 900px) {
+  header img {
+    width: 30px;
+    height: 30px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
 
- @media (max-width: 900px) {
-     .section{
-
-         display: flex;
-         flex-direction: column;
-     }
-
-     .imagem-responsive {
-        display: none;
-     }
-     aside{
-         margin-left:15px;
-         width: 100%;
-         background-color: #F1D9CA;
-         border: 1px solid #F1D9CA;
-         border-radius: 10px;
-         padding: 20px;
-         align-items: center;
-
-     }
-     section {
-         margin-left: 15px;
-         width: 100%;
-         background-color: #F1D9CA;
-         border: 1px solid #F1D9CA;
-         border-radius: 10px;
-         padding: 20px;
-        align-content: center;
-         margin-top: 50px;
-
-     }
-
- }
+  .imagem-responsive {
+    display: none;
+  }
+  aside {
+    margin-left: 15px;
+    width: 100%;
+    background-color: #f1d9ca;
+    border: 1px solid #f1d9ca;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+  }
+  section {
+    margin-left: 15px;
+    width: 100%;
+    background-color: #f1d9ca;
+    border: 1px solid #f1d9ca;
+    border-radius: 10px;
+    padding: 20px;
+    align-content: center;
+    margin-top: 50px;
+  }
+}
